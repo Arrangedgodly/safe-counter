@@ -19,11 +19,13 @@
 .bill__form {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
+  margin-top: 10px;
 }
 
 .bill__overage-form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 680px) {
