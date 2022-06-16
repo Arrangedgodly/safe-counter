@@ -11,5 +11,10 @@
     margin: 10px 0 40px 0;
     color: #fff;
     font-weight: 500;
-    font-style: medium;
+}
+
+@media screen and (max-width: 680px) {
+    .header__title {
+        font-size: 35px;
+    }
 }

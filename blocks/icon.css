@@ -2,6 +2,7 @@
     width: 50px;
     height: 50px;
     margin: auto 20px auto 20px;
+    background-size: contain;
 }
 
 .icon_m {
@@ -14,4 +15,21 @@
     width: 150px;
     height: 150px;
     margin: 40px auto 20px auto;
+}
+
+@media screen and (max-width: 680px) {
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .icon_m {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon_l {
+        width: 80px;
+        height: 80px;
+    }
 }

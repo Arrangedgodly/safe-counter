@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin: 10px 5px 10px 5px;
+  margin: 5px;
   font-style: italic;
   font-size: 26px;
 }
@@ -33,4 +33,10 @@
 .form__input::-moz-placeholder,
 .form__input::-webkit-input-placeholder {
   color: #fff;
+}
+
+@media screen and (max-width: 680px) {
+    .form__label {
+      font-size: 4.25vw;
+    }
 }

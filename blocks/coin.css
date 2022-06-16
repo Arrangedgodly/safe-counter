@@ -17,5 +17,11 @@
 
 .coin__form {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+@media screen and (max-width: 680px) {
+    .coin__header {
+        font-size: 20px;
+    }
 }
