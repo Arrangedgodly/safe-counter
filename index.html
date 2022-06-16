@@ -6,26 +6,216 @@
       <meta name="author" content="Grady Wasil">
       <meta name="description" content="An app designed to help quickly count the cash on hand in the vault at work">
       <meta name="keywords" content="grady wasil, arrangedgodly, arranged godly, html, css, javascript, vault cash counter, cash counter, vault counter, cash calculator">
+      <link rel="shortcut icon" href="./images/vault.svg">
+      <link rel="stylesheet" href="./pages/index.css">
       <title>Vault/Safe Counter App</title>
     </head>
     <main>
-      <header class="header">
-        <div class="header__icons">
-          <svg
-            href="./images/vault.svg"
-            class="icon"
-          ></svg>
-          <svg
-            href="./images/calculator.svg"
-            class="icon"
-          ></svg>
-        </div>
-      </header>
-      <body>
+      <div class="page">
+        <header class="header">
+          <div class="header__icons">
+            <img
+              src="./images/vault.svg"
+              class="icon"
+              alt="vault icon"
+            >
+            <img
+              src="./images/calculator.svg"
+              class="icon"
+              alt="calculator icon"
+            >
+          </div>
+          <h1 class="header__title">Vault Calculator</h1>
+        </header>
+        <body>
+          <section class="coin">
+            <div class="coin__header">
+              <h2 class="coin__text">Coin Count</h2>
+              <img
+                src="./images/coins.svg"
+                class="icon"
+                alt="coin icon"
+              >
+            </div>
+            <form class="coin__form form">
+              <label for="penny_single">Penny Rolls
+                <input
+                type="number"
+                class="form__input"
+                name="penny_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="penny_box">Penny Boxes
+                <input
+                type="number"
+                class="form__input"
+                name="penny_box"
+                placeholder="0"
+              />
+              </label>
+              <label for="nickel_single">Nickel Rolls
+                <input
+                type="number"
+                class="form__input"
+                name="nickel_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="nickel_box">Nickel Boxes
+                <input
+                type="number"
+                class="form__input"
+                name="nickel_box"
+                placeholder="0"
+              />
+              </label>
+              <label for="dime_single">Dime Rolls
+                <input
+                type="number"
+                class="form__input"
+                name="dime_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="dime_box">Dime Boxes
+                <input
+                type="number"
+                class="form__input"
+                name="dime_box"
+                placeholder="0"
+              />
+              </label>
+              <label for="quarter_single">Quarter Rolls
+                <input
+                type="number"
+                class="form__input"
+                name="quarter_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="quarter_box">Quarter Boxes
+                <input
+                type="number"
+                class="form__input"
+                name="quarter_box"
+                placeholder="0"
+              />
+              </label>
+            </form>
+          </section>
+          <section class="coin">
+            <div class="coin__header">
+              <h2 class="coin__text">Bill Count</h2>
+              <img
+                src="./images/money-bill.svg"
+                class="icon"
+                alt="money icon"
+              >
+            </div>
+            <form class="coin__form form">
+              <label for="dollar_single">One Bills
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_bundle">One Bundles
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_bundle"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_five">Five Bills
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_five"
+                placeholder="0"
+              />
+              </label>
+              <label for="five_bundle">Five Bundles
+                <input
+                type="number"
+                class="form__input"
+                name="five_bundle"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_single">One Bills
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_bundle">One Bundles
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_bundle"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_single">One Bills
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_bundle">One Bundles
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_bundle"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_single">One Bills
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_bundle">One Bundles
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_bundle"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_single">One Bills
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_single"
+                placeholder="0"
+              />
+              </label>
+              <label for="dollar_bundle">One Bundles
+                <input
+                type="number"
+                class="form__input"
+                name="dollar_bundle"
+                placeholder="0"
+              />
+              </label>
+            </form>
+          </section>
+        </body>
+        <footer>
 
-      </body>
-      <footer>
-
-      </footer>
+        </footer>
+      </div>
     </main>
   </html>

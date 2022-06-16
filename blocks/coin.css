@@ -1,0 +1,15 @@
+.coin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin__header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coin__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
