@@ -1,5 +1,5 @@
 .form {
-  
+  max-width: 500px;
 }
 
 .form-wrapper {
@@ -14,7 +14,8 @@
   align-items: center;
   color: #fff;
   margin: 10px 5px 10px 5px;
-  text-shadow: 1px 1px 1px #000;
+  font-style: italic;
+  font-size: 24px;
 }
 
 .form__input {
@@ -24,4 +25,12 @@
   height: 50px;
   text-align: center;
   margin: 10px auto 10px auto;
+  border-style: none;
+}
+
+.form__input::placeholder,
+.form__input::-ms-input-placeholder,
+.form__input::-moz-placeholder,
+.form__input::-webkit-input-placeholder {
+  color: #fff;
 }
