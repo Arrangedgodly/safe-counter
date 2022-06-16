@@ -4,6 +4,12 @@
     margin: auto 20px auto 20px;
 }
 
+.icon_m {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+}
+
 .icon_l {
     width: 150px;
     height: 150px;
