@@ -1,5 +1,7 @@
 .page {
-    width: 85%;
+    background-color: #CAF0F8;
+}
+
+.page-wrapper {
     margin: 0 auto 0 auto;
-    background-color: rgb(75, 75, 75);
 }

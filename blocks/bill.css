@@ -1,0 +1,24 @@
+.bill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bill__header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #0096C7;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bill__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bill__overage-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
