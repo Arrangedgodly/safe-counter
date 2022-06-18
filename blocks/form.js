@@ -1,8 +1,9 @@
-const btn = document.querySelector('#submit');
-const form = document.querySelector('#coin');
-btn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const formData = new formData(form);
-  const values = [...formData.entries()];
-  console.log(values);
-});
+var formCoin = document.forms.coinForm;
+var coinData = new FormData(formCoin);
+var formBill = document.forms.billForm;
+var formBillOverage = document.forms.billOverageForm;
+
+function changeText() {
+  console.log(coinData.get(pennySingle));
+}
+

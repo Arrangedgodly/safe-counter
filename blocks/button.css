@@ -1,4 +1,15 @@
 .button {
   grid-column-start: 1;
   grid-column-end: 4;
+  background-color: #03045E;
+  border-style: none;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  margin: auto auto 10px auto;
+}
+
+.buttton_update {
+  border-style: none;
+  background-color: #ADE8F4;
 }

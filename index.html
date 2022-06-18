@@ -15,6 +15,14 @@
     <link rel="shortcut icon" href="./images/vault.svg" />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Vault/Safe Counter App</title>
+    <script src="./vendor/jquery.js"></script>
+    <script src="./blocks/change.js"></script>
+    <script src="./blocks/form.js"></script>
+    <script>
+		  $(document).ready(function() {
+        $("#pennyTotal").text("Pennies: " + convertMoney(.01, document.getElementById('penny_single'), document.getElementById('penny_box')));
+		  });
+    </script>
   </head>
   <main class="page">
     <div class="page-wrapper">
@@ -36,13 +44,14 @@
               <h2 class="coin__text">Coin Count</h2>
               <img src="./images/coins-alt.svg" class="icon" alt="coin icon" />
             </div>
-            <form class="coin__form form" id="coin">
+            <form class="coin__form form" id="coinForm" action="" method="post">
               <label for="penny_single" class="form__label"
                 >Penny Rolls
                 <input
                   type="number"
                   class="form__input"
                   name="penny_single"
+                  id="penny_single"
                   placeholder=""
                 />
               </label>
@@ -57,15 +66,20 @@
                   type="number"
                   class="form__input"
                   name="penny_box"
+                  id="penny_box"
                   placeholder=""
                 />
               </label>
+              <div class="button">
+                <p class="coin__text coin__text_sm" id="pennyTotal">Pennies:</p>
+              </div>
               <label for="nickel_single" class="form__label"
                 >Nickel Rolls
                 <input
                   type="number"
                   class="form__input"
                   name="nickel_single"
+                  id="nickel_single"
                   placeholder=""
                 />
               </label>
@@ -80,6 +94,7 @@
                   type="number"
                   class="form__input"
                   name="nickel_box"
+                  id="nickel_box"
                   placeholder=""
                 />
               </label>
@@ -89,6 +104,7 @@
                   type="number"
                   class="form__input"
                   name="dime_single"
+                  id="dime_single"
                   placeholder=""
                 />
               </label>
@@ -103,6 +119,7 @@
                   type="number"
                   class="form__input"
                   name="dime_box"
+                  id="dime_box"
                   placeholder=""
                 />
               </label>
@@ -112,6 +129,7 @@
                   type="number"
                   class="form__input"
                   name="quarter_single"
+                  id="quarter_single"
                   placeholder=""
                 />
               </label>
@@ -126,19 +144,18 @@
                   type="number"
                   class="form__input"
                   name="quarter_box"
+                  id="quarter_box"
                   placeholder=""
                 />
               </label>
-              <button type="submit" class="button" id="submit">Update</button>
             </form>
-            <script src="./blocks/form.js"></script>
           </section>
           <section class="bill">
             <div class="bill__header">
               <h2 class="bill__text">Bill Count</h2>
               <img src="./images/money-bill-alt.svg" class="icon" alt="money icon" />
             </div>
-            <form class="bill__form form">
+            <form class="bill__form form" id="billForm" action="" method="post">
               <label for="dollar_single" class="form__label"
                 >One Bills
                 <input
@@ -299,7 +316,7 @@
             <div class="bill__header">
               <h2 class="bill__text">Bill Overage</h2>
             </div>
-            <form class="bill__overage-form form">
+            <form class="bill__overage-form form" id="billOverageForm" action="" method="post">
               <label for="twenty" class="form__label"
                 >Twenties
                 <input
